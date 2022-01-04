@@ -3432,9 +3432,7 @@ strong{font-weight: 800 !important;}
    backface-visibility: hidden;
    transition: all 150ms ease;
 }
-.support a:hover {
-   transform: scale(1.1);
-}
+.support a:hover {transform: scale(1.1);}
 /*btn css ends*/
 .text-dark{color: #554d45 !important;}
 .content-wrapper .agrarium-button:hover{color: #fff !important;}
@@ -3443,3 +3441,4 @@ strong{font-weight: 800 !important;}
 .font-weight-bold{font-weight: bold;}
 .font-20{font-size: 25px;padding: 40px auto !important;}
 .py-4{padding-top: 3rem !important;padding-bottom: 5rem !important;}
+.mt--7{margin-top: -7%;}
