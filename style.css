@@ -3442,3 +3442,15 @@ strong{font-weight: 800 !important;}
 .font-20{font-size: 25px;padding: 40px auto !important;}
 .py-4{padding-top: 3rem !important;padding-bottom: 5rem !important;}
 .mt--7{margin-top: -7%;}
+.counter-txt{font-size: 22px;line-height: 1;}
+/*media*/
+@media only screen and (min-width: 1025px) {
+	.service-listing-wrapper .service-item-wrapper{
+		padding: 0px !important;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.service-listing-wrapper .service-item-wrapper{
+		padding: 0px !important;
+	}
+}
