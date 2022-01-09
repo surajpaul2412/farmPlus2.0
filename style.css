@@ -3446,6 +3446,7 @@ strong{font-weight: 800 !important;}
 .pad-counter{padding: 20px 0px !important;}
 .desktop-45{width:45% !important;display: flex !important;}
 .py-5{padding: 5rem 0px !important;}
+.static-header{position: absolute;top: 28%;left: 10%;z-index: 9999;}
 
 /*desktop only media*/
 @media only screen and (min-width: 945px) {
@@ -3466,7 +3467,7 @@ strong{font-weight: 800 !important;}
 	.bg-trans{display: none !important;}
 	.py-5{padding: 5rem 0px 0px 0px !important;}
 	.agrarium-testimonial-carousel-widget .testimonial-carousel-wrapper .testimonial-item .testimonial p{line-height: 1.5em !important;font-size: 13px !important;}
-
+	.static-header{position: absolute;top: 28%;left: 10%;z-index: 9999;}
 
 	.service-item-wrapper {
 		display: flex;
