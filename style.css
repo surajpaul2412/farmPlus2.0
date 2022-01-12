@@ -3448,6 +3448,58 @@ strong{font-weight: 800 !important;}
 .py-5{padding: 5rem 0px !important;}
 .static-header{position: absolute;top: 28%;left: 10%;z-index: 9999;}
 .pt-120{padding-top: 120px;}
+.d-none{display: none;}
+.bg-green:nth-child(1){--btn-bg: #00863b !important;}
+
+/*modal*/
+.bg-orange:hover .icon-container2 .icon--left2{margin-left: -4px;}
+.bg-orange .icon-container2 .icon2{padding-left: 18px;}
+.bg-orange{background: #ea9724 !important;}
+.border-y-rad{border-top-right-radius: 8px;border-top-left-radius: 8px;}
+.rounded-pill{border-radius: 28px;}
+.btn-pink{background: #f13a71;}
+.btn-success{background: #00863b !important;}
+.modal {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1.1);
+   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   /*padding: 1rem 1.5rem;*/
+   width: 55%;
+   border-radius: 0.5rem;
+}
+.close-button {
+   position: absolute;right: 0;
+   width: 1.5rem;
+   line-height: 1.5rem;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 0.25rem;
+   background: transparent;
+   font-size: 40px;
+}
+.show-modal {
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1.0);
+   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.media-d-block{display: flex;}
+.w-55{width:55%;}
+.w-pad{padding: 0px 20px;}
 
 /*desktop only media*/
 @media only screen and (min-width: 945px) {
@@ -3461,6 +3513,12 @@ strong{font-weight: 800 !important;}
 	.media-d-none{
 		display: none !important;
 	}
+	.media-notify-logo{width: 35%;padding-bottom: 18px;}
+	.media-d-block{display: block !important;}
+	.w-pad{padding: 0px 10px;}
+	.media-pr{padding-right: 20px;}
+	.w-55{width: 100%;}
+	.modal-content{width: 95%;padding-bottom: 20px;}
 	.desktop-45{width:100% !important;}
 	.desktop-40{width:100% !important;}
 	.desktop-px-140{padding:0px !important;}

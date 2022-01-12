@@ -107,8 +107,10 @@
                background-repeat: no-repeat;
             }
             .agrarium_content_slider_widget .container-boxed{background: rgb(251 181 158 / 30%) !important;}
-            .agrarium_content_slider_title p {padding-top: 32% !important;font-size: 16px;line-height: 1 !important;}
+            .agrarium_content_slider_title p {padding-top:11% !important;font-size: 0.9rem;line-height: 1 !important;}
+            .agrarium_content_slider_desc{line-height: 1;padding-top:3.5%;font-size: 0.7rem;padding-right: 43%;}
             .agrarium_content_wrapper_3{display: none;}
+            h2:not(:last-child), .agrarium_content_slider_title:not(:last-child){margin-bottom: 0px !important;}
             .agrarium_content_slider_title{letter-spacing: 0px !important;}
          }
       </style>
@@ -307,6 +309,7 @@
                <div class="agrarium_slider_column">
                   <div class="agrarium_content_wrapper_2">
                      <div class="agrarium_content_slider_title"><p>Streamlining<br>Agri-Supply Chain</p></div>
+                     <div class="agrarium_content_slider_desc">One-stop platform connecting farmers to buyers across the nation</div>
                   </div>
                </div>
             </div>
@@ -1425,6 +1428,117 @@
                </div>
             </div>
          </footer>
+
+
+
+
+<!-- try -->
+<button class="trigger d-none">Click the modal!</button>
+<div id="myModal" class="modal" style="z-index: 9999 !important;">
+    <div class="modal-content" style="background: #d6d6d6;">
+        <span class="close-button">×</span>
+        <div class="" style="display: flex;width: 100%;">
+            <div class="" style="width:100%;padding:30px 0px;" align="center">
+               <h2 class="font-weight-bold theme-color">Welcome To FarmPlus</h2>
+            </div>
+         </div>
+        <div class="w-100" style="width: 100%;">
+           <div class="w-55 w-pad" align="center">            
+            <div class="font-weight-bold media-pr" style="font-size:14px;line-height: 1.6;padding-top: 10px;margin-bottom: 40px;padding-left: 18px;">
+               Brought into business in 2011, Farm Plus is the Output domain of DeHaat that provides superior quality Dry and Fresh products, picked up right from the fields and delivered at the doorsteps of clients across the country.
+            </div>
+            <div class="media-d-block" style="display:flex;justify-content: center;align-items: center;">
+               <img src="img/logo.svg" width="22%" class="media-notify-logo" style="display: block;margin:auto;">
+               <!-- <a class="close-a btn btn-pink rounded-pill"> </a> -->
+               <div class="header-mobile-button1">
+                  <div class="btn-container">
+                     <a class="button close-a" style="--width:240px;--height:50px;font-size:13px;">
+                        <span class="text">Proceed To FarmPlus</span>
+                        <div class="icon-container">
+                           <div class="icon icon--left">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                           <div class="icon icon--right">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <svg style="display: none;">
+                     <symbol id="arrow-right" viewBox="0 0 20 10">
+                        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                     </symbol>
+                  </svg>
+               </div>
+         <!--  -->
+            </div>
+            <div class="media-d-block" style="justify-content: center;align-items: center;padding-top: 30px;">
+               <img src="https://agrevolution.in/images/company/deHaat-logo.png" width="28%" class="media-notify-logo" style="display: block;margin:auto;">
+               <!-- <a href="https://agrevolution.in/" target="_blank" class="btn btn-success rounded-pill">explore dehaat</a> -->
+               <div class="header-mobile-button1">
+                  <div class="btn-container bg-green">
+                     <a href="https://agrevolution.in/" target="_blank" class="button bg-orange" style="--width:240px;--height:50px;font-size:13px;">
+                        <span class="text">Explore Dehaat</span>
+                        <div class="icon-container icon-container2">
+                           <div class="icon icon2 icon--left icon--left">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                           <div class="icon icon2 icon--right">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+
+                  <svg style="display: none;">
+                     <symbol id="arrow-right" viewBox="0 0 20 10">
+                        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                     </symbol>
+                  </svg>
+               </div>
+            </div>            
+           </div>
+
+           <div class="media-d-none" style="width:45%;" align="center">
+            <img src="img/notify.png" width="100%" style="margin-top: -80px;">
+           </div>
+        </div>
+    </div>
+</div>
+<script>
+   // load modal
+   $(window).load(function(){
+      setTimeout(function(){
+         toggleModal();
+      }, 3000);
+   });
+
+   var modal = document.querySelector(".modal");
+   var trigger = document.querySelector(".trigger");
+   var closeButton = document.querySelector(".close-button");
+   var closeButton1 = document.querySelector(".close-a");
+
+   function toggleModal() {
+       modal.classList.toggle("show-modal");
+   }
+   function windowOnClick(event) {
+       if (event.target === modal) {
+           toggleModal();
+       }
+   }
+   trigger.addEventListener("click", toggleModal);
+   closeButton.addEventListener("click", toggleModal);
+   closeButton1.addEventListener("click", toggleModal);
+   window.addEventListener("click", windowOnClick);
+</script>
       </div>
 
 
