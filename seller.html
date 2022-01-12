@@ -40,6 +40,14 @@
           }
           .page-title-container .page-title-bg{
             background-image: url('img/banners/Become seller.jpg') !important;
+            background-position: right;
+         }
+         .media-text{color: #554d45;}
+         @media only screen and (max-width: 900px) {
+            .h1, h1{font-size: 2rem;}
+            .font-media{font-size: 1rem !important;}
+            .p-3{padding:  0px !important;}
+            .media-text{color: #fff !important;}
          }
         </style>
     </head>
@@ -55,46 +63,7 @@
             </div>
          </div>
          <nav>
-            <!-- Menu Block -->
-            <ul id="menu-main-menu" class="main-menu">
-               <li id="menu-item-204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-204">
-                  <a href="#">Home</a>
-                  <ul class="sub-menu">
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#journey">Our Journey</a></li>
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#values">Our Values</a></li>
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#presence">Our Presence</a></li>
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#customers">Our Customers</a></li>
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#clients">Our Clients</a></li>
-                  </ul>
-               </li>
-               <li id="menu-item-205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-205">
-                  <a href="product.html">Our Products</a>
-                  <ul class="sub-menu">
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="product/fruit_vegetable.html">Fruits & Vegetables</a></li>
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="product/dry.html">Dry</a></li>
-                     <li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="product/frozen.html">Frozen</a></li>
-                  </ul>
-               </li>
-               <li id="menu-item-207" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-207">
-                  <a href="channel.html">Our Channel</a>
-                  <ul class="sub-menu">
-                     <li id="menu-item-227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><a href="channels/mini-mandi.html">Mini Mandi</a></li>
-                     <li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="channels/new-age.html">New Age</a></li>
-                     <li id="menu-item-6703" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6703"><a href="channels/conventional.html">Conventional</a></li>
-                  </ul>
-               </li>
-               <li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="blog.html">Blogs</a></li>
-               <li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="career.html">Career</a></li>
-            </ul>
          </nav>
-         <div class="header-mobile-socials">
-            <ul class="mobile-menu-socials wrapper-socials">
-               <li><a href="https://twitter.com/" target="_blank" class="fab  fa-twitter" title="Twitter"></a></li>
-               <li><a href="https://facebook.com" target="_blank" class="fab  fa-facebook-f" title="Facebook"></a></li>
-               <li><a href="https://www.youtube.com/" target="_blank" class="fab  fa-youtube" title="Youtube"></a></li>
-               <li><a href="https://www.instagram.com/" target="_blank" class="fab  fa-instagram" title="Instagram"></a></li>
-            </ul>
-         </div>
          <div class="header-mobile-button1">
             <div class="btn-container">
                <a class="button" href="get_in_touch.html">
@@ -228,21 +197,29 @@
                   <!-- Logo Block -->
                   <div class="logo-container">
                      <div class="logo retina-logo">
-                        <a class="logo-link">
-                           <img src="img/logo.svg" alt="FarmPlus" width="35%" />
+                        <a href="index.html" class="logo-link">
+                           <img src="img/logo.svg" alt="FarmPlus" width="55%" />
                         </a>
                      </div>
                   </div>
                   <!-- Icons Block -->
-                  <div class="header-icons-container">
-                     <div class="header-icon menu-trigger">
-                        <span class="menu-trigger-icon">
-                        <span class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </span>
-                        </span>
+                    <div class="header-icons-container">
+                     <div class="btn-container burger">
+                        <a class="button" href="get_in_touch.html" style="--width: 135px;--height:40px;font-size: 10px;">
+                           <span class="text">Get In Touch</span>
+                           <div class="icon-container">
+                              <div class="icon icon--left">
+                                 <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                 </svg>
+                              </div>
+                              <div class="icon icon--right">
+                                 <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -261,36 +238,6 @@
                   <!-- Menu Block -->
                   <div class="header-menu-container">
                      <nav>
-                        <ul id="menu-main-menu-1" class="main-menu">
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-204">
-                              <a href="index.html">Home</a>
-                              <ul class="sub-menu">
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#journey">Our Journey</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#values">Our Values</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#presence">Our Presence</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#customers">Our Customers</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="index.html#clients">Our Clients</a></li>
-                              </ul>
-                           </li>
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-205">
-                              <a href="product.html">Our Products</a>
-                              <ul class="sub-menu">
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="product/fruit_vegetable.html">Fruits & Vegetables</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="product/dry.html">Dry</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="product/frozen.html">Frozen</a></li>
-                              </ul>
-                           </li>
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-207">
-                              <a href="channel.html">Our Channels</a>
-                              <ul class="sub-menu">
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><a href="channels/mini-mandi.html">Mini Mandi</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="channels/new-age.html">New Age</a></li>
-                                 <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6703"><a href="channels/conventional.html">Conventional</a></li>
-                              </ul>
-                           </li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="blog.html">Blogs</a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><a href="career.html">Career</a></li>
-                        </ul>
                      </nav>
                   </div>
                   <!-- Right Info Block -->
@@ -329,7 +276,7 @@
                 <div class="page-title-row">
                     <div class="page-title-wrapper">
                         <div class="page-title-box">
-                            <h1 class="page-title text-dark1">Be a Seller</h1>
+                            <h1 class="page-title media-text media-d-none">Be a Seller</h1>
                         </div>
                     </div>
                 </div>
@@ -340,12 +287,11 @@
                 <!-- Content Container -->
                 <div class="content" style="margin-top: -100px;">
                   <h1 align="center">
-                    <span class="theme-color font-weight-bold">
-                      <span style="color: #ffffff">Want to be a</span> <span style="color: #f4ce49"> FarmPlus Seller ?</span></span>
+                    <span class="theme-color font-weight-bold">Want to be a FarmPlus Seller ?</span>
                     </span>
                   </h1>
                   <div class="text-dark font-weight-bold" align="center">
-                    <h2 class="font-weight-bold">Cater to the needs of a large & rapidly growing client base from across the globe and unlock endless possibilities for your business!</h2>
+                    <h2 class="font-weight-bold font-media">Cater to the needs of a large & rapidly growing client base from across the globe and unlock endless possibilities for your business!</h2>
                     <!-- <a class="btn btn-cta" href="tel:1800-1036-106"><i class="pr-2 fa fa-phone-alt"></i> 1800-1036-106</a> -->
                     <div class="header-mobile-button1 mt-4">
                       <div class="btn-container">
@@ -839,7 +785,7 @@
                             </div>
                          </div>
                          <!---------template Container Starts Here---------->
-                         <button class="btn btn-submit d-block mx-auto" >Submit</button>
+                         <button type="submit" name="wpforms[submit]" id="wpforms-submit-7966" class="w-100 text-white wpforms-submit fullwidth" data-alt-text="Sending..." data-submit-text="Send a Message" aria-live="assertive" value="wpforms-submit">Submit</button>
                       </div>
                       <!-- 'zf-templateWrapper' ends -->
                     </form>

@@ -84,30 +84,34 @@
          /*Desktop-only*/
          @media only screen and (min-width: 900px) {
             .agrarium_content_slider_wrapper{padding-top: 105px;}
+            .pt-4rem{padding-top: 4rem;}
          }
          /*Mobile-only*/
          @media only screen and (max-width: 900px) {
             .elementor-160 .elementor-element.elementor-element-5072881 .elementor-repeater-item-banner1{
                background-image:url('img/banners/Banner-1.jpg') !important;
-               background-size: 340% !important;
+               background-size: 300% !important;
                background-position: right;
                background-repeat: no-repeat;
             }
             .elementor-160 .elementor-element.elementor-element-5072881 .elementor-repeater-item-banner2{
                background-image:url('img/banners/Banner-2.jpg') !important;
-               background-size: 340% !important;
+               background-size: 300% !important;
                background-position: right;
                background-repeat: no-repeat;
             }
             .elementor-160 .elementor-element.elementor-element-5072881 .elementor-repeater-item-banner3{
                background-image:url('img/banners/Banner-3.jpg') !important;
-               background-size: 340% !important;
+               background-size: 300% !important;
                background-position: right;
                background-repeat: no-repeat;
             }
             .agrarium_content_slider_widget .container-boxed{background: rgb(251 181 158 / 30%) !important;}
-            .agrarium_content_slider_title p {padding-top: 25% !important;font-size: 40px;}
+            .agrarium_content_slider_title p {padding-top:11% !important;font-size: 0.9rem;line-height: 1 !important;}
+            .agrarium_content_slider_desc{line-height: 1;padding-top:3.5%;font-size: 0.7rem;padding-right: 43%;}
             .agrarium_content_wrapper_3{display: none;}
+            h2:not(:last-child), .agrarium_content_slider_title:not(:last-child){margin-bottom: 0px !important;}
+            .agrarium_content_slider_title{letter-spacing: 0px !important;}
          }
       </style>
    </head>
@@ -198,21 +202,29 @@
                   <!-- Logo Block -->
                   <div class="logo-container">
                      <div class="logo retina-logo">
-                        <a class="logo-link">
-                           <img src="img/logo.svg" alt="FarmPlus" width="35%" />
+                        <a href="index.html" class="logo-link">
+                           <img src="img/logo.svg" alt="FarmPlus" width="55%" />
                         </a>
                      </div>
                   </div>
                   <!-- Icons Block -->
                   <div class="header-icons-container">
-                     <div class="header-icon menu-trigger">
-                        <span class="menu-trigger-icon">
-                        <span class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </span>
-                        </span>
+                     <div class="btn-container burger">
+                        <a class="button" href="get_in_touch.html" style="--width: 135px;--height:40px;font-size: 10px;">
+                           <span class="text">Get In Touch</span>
+                           <div class="icon-container">
+                              <div class="icon icon--left">
+                                 <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                 </svg>
+                              </div>
+                              <div class="icon icon--right">
+                                 <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -292,6 +304,29 @@
                </div>
             </div>
          </header>
+         <div class="desktop-d-none" style="position: relative;">
+            <div class="static-header">
+               <div class="agrarium_slider_column">
+                  <div class="agrarium_content_wrapper_2">
+                     <div class="agrarium_content_slider_title"><p>Streamlining<br>Agri-Supply Chain</p></div>
+                     <div class="agrarium_content_slider_desc">One-stop platform connecting farmers to buyers across the nation</div>
+                  </div>
+               </div>
+            </div>
+            <div class="py-5 desktop-d-none" align="center">
+               <div class="blog-slider slider">
+                  <div class="slide">
+                     <img alt="fruit" title="fruit" src="img/banners/Banner-1.jpg"/>
+                  </div>
+                  <div class="slide">
+                     <img alt="fruit" title="fruit" src="img/banners/Banner-2.jpg"/>
+                  </div>
+                  <div class="slide">
+                     <img alt="fruit" title="fruit" src="img/banners/Banner-3.jpg"/>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="content-wrapper content-wrapper-remove-top-margin content-wrapper-remove-bottom-margin content-wrapper-sidebar-position-none">
             <!-- Content Container -->
             <div class="content">
@@ -299,7 +334,7 @@
                   <div data-elementor-type="wp-page" data-elementor-id="160" class="elementor elementor-160" data-elementor-settings="[]">
                      <div class="elementor-inner">
                         <div class="elementor-section-wrap">
-                           <section class="elementor-section elementor-top-section elementor-element elementor-element-adf4639 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="adf4639" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                           <section class="media-d-none elementor-section elementor-top-section elementor-element elementor-element-adf4639 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="adf4639" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
                               <div class="elementor-container elementor-column-gap-no">
                                  <div class="elementor-row">
                                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f1cb714" data-id="f1cb714" data-element_type="column">
@@ -308,15 +343,29 @@
                                              <div class="elementor-element elementor-element-5072881 elementor-widget elementor-widget-agrarium_content_slider" data-id="5072881" data-element_type="widget" data-widget_type="agrarium_content_slider.default">
                                                 <div class="elementor-widget-container">
                                                    <div class="agrarium_content_slider_widget">
-                                                      <div class="agrarium_content_slider_wrapper">
-                                                         <div class="agrarium_content_slider agrarium_slider_slick" data-slider-options="{&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;pauseOnHover&quot;:true,&quot;autoplay&quot;:false,&quot;infinite&quot;:true,&quot;speed&quot;:1200,&quot;rtl&quot;:false}">
+                                                      <div class="agrarium_content_slider_wrapper" style="position: relative;">
+                                                         <div class="static-header">
+                                                               <div class="agrarium_slider_column">
+                                                                  <div class="agrarium_content_wrapper_2">
+                                                                     <div class="agrarium_content_slider_title">
+                                                                        <p style="padding-top: 2%;">Streamlining<br>Agri-Supply Chain</p>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="agrarium_content_wrapper_3">
+                                                                     <div class="agrarium_content_slider_promo_text">
+                                                                        <p>One-stop platform connecting farmers to buyers across the nation<br>via technology-driven solutions !</p>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         <div class="agrarium_content_slider agrarium_slider_slick" data-slider-options="{&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;pauseOnHover&quot;:true,&quot;autoplay&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:1200,&quot;rtl&quot;:false}">
                                                             <div class="agrarium_content_slide elementor-repeater-item-banner1 slide-animation-type-fade_in_right">
                                                                <div class="container-boxed agrarium_full_cont">
                                                                   <div class="agrarium_full_cont">
                                                                      <div class="agrarium_content_slide_wrapper">
                                                                         <div class="agrarium_content_container">
                                                                            <div class="agrarium_slider_column">
-                                                                              <div class="agrarium_content_wrapper_2">
+                                                                              <!-- <div class="agrarium_content_wrapper_2">
                                                                                  <div class="agrarium_content_slider_title">
                                                                                     <p style="padding-top: 2%;">Streamlining<br>Agri-Supply Chain</p>
                                                                                  </div>
@@ -325,7 +374,7 @@
                                                                                  <div class="agrarium_content_slider_promo_text">
                                                                                     <p>One-stop platform connecting farmers to buyers across the nation<br>via technology-driven solutions !</p>
                                                                                  </div>
-                                                                              </div>
+                                                                              </div> -->
                                                                               <!-- <div class="agrarium_content_wrapper_4"><a class="agrarium-button" href="product.html">Discover</a></div> -->
                                                                            </div>
                                                                         </div>
@@ -339,7 +388,7 @@
                                                                      <div class="agrarium_content_slide_wrapper">
                                                                         <div class="agrarium_content_container">
                                                                            <div class="agrarium_slider_column">
-                                                                              <div class="agrarium_content_wrapper_2">
+                                                                              <!-- <div class="agrarium_content_wrapper_2">
                                                                                  <div class="agrarium_content_slider_title">
                                                                                     <p style="padding-top: 2%;">Streamlining<br>Agri-Supply Chain</p>
                                                                                  </div>
@@ -348,7 +397,7 @@
                                                                                  <div class="agrarium_content_slider_promo_text">
                                                                                     <p>One-stop platform connecting farmers to buyers across the nation<br>via technology-driven solutions !</p>
                                                                                  </div>
-                                                                              </div>
+                                                                              </div> -->
                                                                               <!-- <div class="agrarium_content_wrapper_4"><a class="agrarium-button" href="product.html">Discover</a></div> -->
                                                                            </div>
                                                                         </div>
@@ -362,7 +411,7 @@
                                                                      <div class="agrarium_content_slide_wrapper">
                                                                         <div class="agrarium_content_container">
                                                                            <div class="agrarium_slider_column">
-                                                                              <div class="agrarium_content_wrapper_2">
+                                                                              <!-- <div class="agrarium_content_wrapper_2">
                                                                                  <div class="agrarium_content_slider_title">
                                                                                     <p style="padding-top: 2%;">Streamlining<br>Agri-Supply Chain</p>
                                                                                  </div>
@@ -371,7 +420,7 @@
                                                                                  <div class="agrarium_content_slider_promo_text">
                                                                                     <p>One-stop platform connecting farmers to buyers across the nation<br>via technology-driven solutions !</p>
                                                                                  </div>
-                                                                              </div>
+                                                                              </div> -->
                                                                               <!-- <div class="agrarium_content_wrapper_4"><a class="agrarium-button" href="product.html">Discover</a></div> -->
                                                                            </div>
                                                                         </div>
@@ -394,11 +443,12 @@
                                  </div>
                               </div>
                            </section>
+
                            <!-- our journey -->
                            <section id="journey" class="elementor-section elementor-top-section elementor-element elementor-element-f8e0968 elementor-section-stretched elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f8e0968" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                               <div class="elementor-container elementor-column-gap-extended">
                                  <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6124029" data-id="6124029" data-element_type="column">
+                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6124029 media-d-none" data-id="6124029" data-element_type="column">
                                        <div class="elementor-column-wrap elementor-element-populated">
                                           <div class="elementor-widget-wrap">
                                              <div class="elementor-element elementor-element-037eb22 elementor-widget__width-auto scroll-motion-no elementor-invisible elementor-widget elementor-widget-image" data-id="037eb22" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;ta_under_strips&quot;,&quot;_animation_laptop&quot;:&quot;none&quot;}" data-widget_type="image.default">
@@ -417,7 +467,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3bb4c18" data-id="3bb4c18" data-element_type="column">
+                                    <div class="media-mt-7 elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3bb4c18" data-id="3bb4c18" data-element_type="column">
                                        <div class="elementor-column-wrap elementor-element-populated">
                                           <div class="elementor-widget-wrap">
                                              <div class="elementor-element elementor-element-ab05b04 elementor-widget elementor-widget-agrarium_heading" data-id="ab05b04" data-element_type="widget" data-widget_type="agrarium_heading.default">
@@ -431,7 +481,7 @@
                                              </div>
                                              <div class="elementor-element elementor-element-8c188c3 elementor-widget elementor-widget-text-editor" data-id="8c188c3" data-element_type="widget" data-widget_type="text-editor.default">
                                                 <div class="elementor-widget-container">
-                                                   <div class="elementor-text-editor elementor-clearfix pt-4">
+                                                   <div class="elementor-text-editor elementor-clearfix pt-4 media-pt-4">
                                                       <p>Brought into business in 2011, FarmPlus is the Output domain of <a href="https://agrevolution.in/" target="_blank">DeHaat</a> that provides superior quality Dry and Fresh products, picked up right from the fields and delivered at the doorsteps of clients across the country.<br/><br/>With 4,00,000 MT of fresh and dry produce processed yearly and almost 8000 agri orders per day, Farm Plus has become one of India’s largest distributors and importers of these 
                                                          .<br/><br/>By utilizing the best of technology, strong sourcing methods and highly trained professionals in the system Farm Plus is on its way to a rapid expansion with a consistent aim of providing faster, better and higher quality fresh and dry produce.</p>
                                                    </div>
@@ -460,10 +510,10 @@
                                                 </div>
                                              </div>
 
-                                             <div class="elementor-element pt-4 elementor-element-0b01910 elementor-widget elementor-widget-agrarium_services_listing" data-id="0b01910" data-element_type="widget" data-widget_type="agrarium_services_listing.default" style="width:45%;display: flex;">
+                                             <div class="desktop-45 elementor-element pt-4 elementor-element-0b01910 elementor-widget elementor-widget-agrarium_services_listing" data-id="0b01910" data-element_type="widget" data-widget_type="agrarium_services_listing.default">
                                                 <div class="elementor-widget-container">
                                                    <div class="archive-listing">
-                                                      <div class="archive-listing-wrapper service-listing-wrapper service-grid-listing columns-2" style="padding-top: 4rem;">
+                                                      <div class="archive-listing-wrapper service-listing-wrapper service-grid-listing columns-2 pt-4rem">
                                                          <div class="service-item-wrapper post-6494 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
                                                             <div class="service-item">
                                                                <div class="service-item-icon">
@@ -551,7 +601,7 @@
                                                 </div>
                                              </div>
 
-                                             <div style="width:55%;display: flex;">
+                                             <div class="media-d-none" style="width:55%;display: flex;">
                                                 <img src="img/Process.png" class="d-block mx-auto" width="80%">
                                              </div>
                                           </div>
@@ -560,7 +610,6 @@
                                  </div>
                               </div>
                            </section>
-
 
                            <!-- Our Values -->
                            <section id="values" class="elementor-section elementor-inner-section elementor-element elementor-element-733205f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="733205f" data-element_type="section" style="margin-bottom: 80px;">
@@ -580,15 +629,15 @@
                                                 </div>
                                              </div>
 
-                                             <div style="width:60%;display: flex;">
-                                                <img src="img/map.png" class="d-block mr-auto" width="75%" style="padding-top: 4rem;">
+                                             <div class="media-d-none" style="width:60%;display: flex;">
+                                                <img src="img/map.png" class="d-block mr-auto pt-4rem" width="75%">
                                                 <!-- <div align="left" style="padding-top: 25px;"><strong class="text-dark">* Map Not To Scale</strong></div> -->
                                              </div>
-                                             <div class="elementor-element pt-4 elementor-element-0b01910 elementor-widget elementor-widget-agrarium_services_listing" data-id="0b01910" data-element_type="widget" data-widget_type="agrarium_services_listing.default" style="width:40%;display: flex;">
+                                             <div class="desktop-40 elementor-element pt-4 elementor-element-0b01910 elementor-widget elementor-widget-agrarium_services_listing" data-id="0b01910" data-element_type="widget" data-widget_type="agrarium_services_listing.default">
                                                 <div class="elementor-widget-container">
                                                    <div class="archive-listing">
-                                                      <div class="archive-listing-wrapper service-listing-wrapper service-grid-listing columns-2" style="padding-top: 4rem;">
-                                                         <div class="service-item-wrapper post-6494 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
+                                                      <div class="archive-listing-wrapper service-listing-wrapper service-grid-listing columns-2 pt-4rem">
+                                                         <div class="service-item-wrapper pad-counter">
                                                             <div class="elementor-element elementor-element-c857d33 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c857d33" data-element_type="widget" data-widget_type="counter.default">
                                                                <div class="elementor-widget-container">
                                                                   <div class="elementor-counter">
@@ -597,16 +646,13 @@
                                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="13" data-from-value="0" data-delimiter=",">0</span>
                                                                         <span class="elementor-counter-number-suffix"></span>
                                                                      </div>
-                                                                     <div class="elementor-counter-title counter-txt">Geographical Footprints </div>
-                                                                     <!-- <div class="service-item-excerpt" align="center" style="line-height: 1.3;font-size: 14px;">
-                                                                        Bihar | Karnataka | Uttar Pradesh<br>| Maharashtra | Himachal Pradesh |<br>Madhya Pradesh | Rajasthan |<br>Punjab | Assam | West Bengal | Odisha<br> | Andhra Pradesh | Jammu & Kashmir
-                                                                     </div> -->
+                                                                     <div class="elementor-counter-title counter-txt txt-counter">Geographical Footprints </div>
                                                                   </div>
                                                                </div>
                                                             </div>
                                                          </div>
-                                                         <div class="service-item-wrapper post-597 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
-                                                            <div class="elementor-element elementor-element-46bd391 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="46bd391" data-element_type="widget" data-widget_type="counter.default">
+                                                         <div class="service-item-wrapper pad-counter">
+                                                            <div class="elementor-element elementor-element-c857d33 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c857d33" data-element_type="widget" data-widget_type="counter.default">
                                                                <div class="elementor-widget-container">
                                                                   <div class="elementor-counter">
                                                                      <div class="elementor-counter-number-wrapper">
@@ -614,16 +660,13 @@
                                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="7" data-from-value="0" data-delimiter=",">0</span>
                                                                         <span class="elementor-counter-number-suffix">L +</span>
                                                                      </div>
-                                                                     <div class="elementor-counter-title counter-txt">50L farmer by 2024 </div>
-                                                                     <!-- <div class="service-item-excerpt" align="center" style="line-height: 1.3;font-size: 14px;">
-                                                                        Commodities<br>19+ Options to choose from the<br>best in the industry with our<br>assurance of quality
-                                                                     </div> -->
+                                                                     <div class="elementor-counter-title counter-txt txt-counter">50L farmer<br/>by 2024 </div>
                                                                   </div>
                                                                </div>
                                                             </div>
                                                          </div>
-                                                         <div class="service-item-wrapper post-6497 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
-                                                            <div class="elementor-element elementor-element-b1c668d elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="b1c668d" data-element_type="widget" data-widget_type="counter.default">
+                                                         <div class="service-item-wrapper pad-counter">
+                                                            <div class="elementor-element elementor-element-c857d33 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c857d33" data-element_type="widget" data-widget_type="counter.default">
                                                                <div class="elementor-widget-container">
                                                                   <div class="elementor-counter">
                                                                      <div class="elementor-counter-number-wrapper">
@@ -631,19 +674,12 @@
                                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="20" data-from-value="0" data-delimiter=",">0</span>
                                                                         <span class="elementor-counter-number-suffix"></span>
                                                                      </div>
-                                                                     <div class="elementor-counter-title counter-txt">Commodities </div>
-                                                                     <!-- <div class="service-item-excerpt" align="center" style="line-height: 1.3;font-size: 14px;">
-                                                                        Commodities approach<br>
-                                                                        with numerous best in quality<br>
-                                                                        products to choose from the<br>
-                                                                        best in the industry with<br>
-                                                                        our assurance of quality
-                                                                     </div> -->
+                                                                     <div class="elementor-counter-title counter-txt txt-counter">Commodities </div>
                                                                   </div>
                                                                </div>
                                                             </div>
                                                          </div>
-                                                         <div class="service-item-wrapper post-6499 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
+                                                         <div class="service-item-wrapper pad-counter">
                                                             <div class="elementor-element elementor-element-c857d33 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c857d33" data-element_type="widget" data-widget_type="counter.default">
                                                                <div class="elementor-widget-container">
                                                                   <div class="elementor-counter">
@@ -652,16 +688,13 @@
                                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="8" data-from-value="0" data-delimiter=",">0</span>
                                                                         <span class="elementor-counter-number-suffix">k+</span>
                                                                      </div>
-                                                                     <div class="elementor-counter-title counter-txt">Agri Orders </div>
-                                                                     <!-- <div class="service-item-excerpt" align="center" style="line-height: 1.3;font-size: 14px;">
-                                                                        Wide network of<br>sourcing, procurement and<br>delivery.
-                                                                     </div> -->
+                                                                     <div class="elementor-counter-title counter-txt txt-counter">Agri Orders </div>
                                                                   </div>
                                                                </div>
                                                             </div>
                                                          </div>
-                                                         <div class="service-item-wrapper post-6501 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
-                                                            <div class="elementor-element elementor-element-46bd391 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="46bd391" data-element_type="widget" data-widget_type="counter.default">
+                                                         <div class="service-item-wrapper pad-counter">
+                                                            <div class="elementor-element elementor-element-c857d33 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c857d33" data-element_type="widget" data-widget_type="counter.default">
                                                                <div class="elementor-widget-container">
                                                                   <div class="elementor-counter">
                                                                      <div class="elementor-counter-number-wrapper">
@@ -669,16 +702,13 @@
                                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="9" data-from-value="0" data-delimiter=",">0</span>
                                                                         <span class="elementor-counter-number-suffix"></span>
                                                                      </div>
-                                                                     <div class="elementor-counter-title counter-txt">Operating Locations </div>
-                                                                     <!-- <div class="service-item-excerpt" align="center" style="line-height: 1.3;font-size: 14px;">
-                                                                        Strategically captured geographies <br>to get the most out of<br> the segment
-                                                                     </div> -->
+                                                                     <div class="elementor-counter-title counter-txt txt-counter">Operating Locations </div>
                                                                   </div>
                                                                </div>
                                                             </div>
                                                          </div>
-                                                         <div class="service-item-wrapper post-6501 agrarium_service type-agrarium_service status-publish has-post-thumbnail hentry">
-                                                            <div class="elementor-element elementor-element-b1c668d elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="b1c668d" data-element_type="widget" data-widget_type="counter.default">
+                                                         <div class="service-item-wrapper pad-counter">
+                                                            <div class="elementor-element elementor-element-c857d33 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c857d33" data-element_type="widget" data-widget_type="counter.default">
                                                                <div class="elementor-widget-container">
                                                                   <div class="elementor-counter">
                                                                      <div class="elementor-counter-number-wrapper">
@@ -686,16 +716,14 @@
                                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="3" data-from-value="0" data-delimiter=",">0</span>
                                                                         <span class="elementor-counter-number-suffix">k +</span>
                                                                      </div>
-                                                                     <div class="elementor-counter-title counter-txt">Agri-Procurers </div>
-                                                                     <!-- <div class="service-item-excerpt" align="center" style="line-height: 1.3;font-size: 14px;">
-                                                                        Extensive network of buyer<br>ensuring bigger platform<br> for the sellers
-                                                                     </div> -->
+                                                                     <div class="elementor-counter-title counter-txt txt-counter">Agri-Procurers </div>
                                                                   </div>
                                                                </div>
                                                             </div>
                                                          </div>
+                                                         
                                                       </div>
-                                                      </div>
+                                                      <!-- </div> -->
                                                    </div>
                                                 </div>
                                              </div>
@@ -714,7 +742,7 @@
                            </div>
                            <div class="elementor-element elementor-element-98e28b2 elementor-widget elementor-widget-agrarium_blog_listing">
                               <div class="elementor-widget-container">
-                                 <div class="archive-listing" style="padding:0px 140px !important;">
+                                 <div class="archive-listing desktop-px-140">
                                     <div class="archive-listing-wrapper grid-listing columns-3">
                                        <div class="standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4641 type-post status-publish format-standard has-post-thumbnail hentry category-farming tag-development tag-post-type">
                                           <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
@@ -766,10 +794,10 @@
                            </div>
 
                            <!-- our products -->
-                           <div class="agrarium-heading-widget" align="center" style="padding-top: 120px;">
+                           <div class="agrarium-heading-widget pt-120" align="center">
                               <h2 class="agrarium-heading"><span class="agrarium-heading-content"><span class="theme-color">Our Avenues: </span>We Offering What’s Best</span></h2>
                            </div>
-                           <div class="elementor-element elementor-element-98e28b2 elementor-widget elementor-widget-agrarium_blog_listing" data-id="98e28b2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="agrarium_blog_listing.default">
+                           <div class="media-d-none elementor-element elementor-element-98e28b2 elementor-widget elementor-widget-agrarium_blog_listing" data-id="98e28b2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="agrarium_blog_listing.default">
                               <div class="elementor-widget-container">
                                  <div class="archive-listing">
                                     <div class="archive-listing-wrapper grid-listing columns-4">
@@ -803,6 +831,7 @@
                                              </div>
                                           </div>
                                        </div>
+
                                        <div class="standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4647 type-post status-publish format-standard has-post-thumbnail hentry category-vegetables">
                                           <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
                                              <div class="post-labels">
@@ -836,319 +865,148 @@
                                  </div>
                               </div>
                            </div>
+                           <!-- mobile only -->
+                           <div class="container py-5 desktop-d-none media-py-5" align="center">
+                              <section class="blog-slider slider pt-4">
+                                 <div class="slide standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4641 type-post status-publish format-standard has-post-thumbnail hentry category-farming tag-development tag-post-type">
+                                    <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                       <div class="post-labels">
+                                          <div class="post-categories"><a class="post-category-item" href="#">Mini Mandi</a></div>
+                                       </div>
+                                       <div class="post-media-wrapper">
+                                          <a href="#">
+                                             <picture>
+                                                <img alt="fruit" title="fruit" src="img/avenue/Mandi-Image.png" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                             </picture>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
 
-                           <!-- Our channels -->
-                           <section id="clients" class="elementor-section elementor-top-section elementor-element elementor-element-75edfcb6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="75edfcb6" data-element_type="section" style="padding-top: 80px;">
-                              <div class="elementor-container elementor-column-gap-default">
-                                 <div class="elementor-row">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-55b48461" data-id="55b48461" data-element_type="column">
-                                       <div class="elementor-column-wrap elementor-element-populated">
-                                          <div class="elementor-widget-wrap">
-                                             <div class="elementor-element elementor-element-5d8d55a4 elementor-widget elementor-widget-agrarium_heading" data-id="5d8d55a4" data-element_type="widget" data-widget_type="agrarium_heading.default">
-                                                <div class="elementor-widget-container">
-                                                   <div class="agrarium-heading-widget">
-                                                      <h2 class="agrarium-heading"><span class="agrarium-heading-content theme-color">Our Clients</span></h2>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <section class="elementor-section elementor-inner-section elementor-element elementor-element-b02e946 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b02e946" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                <div class="elementor-container elementor-column-gap-default">
-                                                   <div class="elementor-row">
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Itc" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Delmonte.jpg" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Cargil" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Flipkart" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-506f352" data-id="506f352" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-19173290 scroll-motion-no elementor-widget elementor-widget-image" data-id="19173290" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Bikaji" class="attachment-full size-full" alt="" loading="lazy"/>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="https://upload.wikimedia.org/wikipedia/en/e/e0/COFCO_Logo.png" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="https://www.roquette.com/-/media/375aea1bc6b24037b4a25f3a00cd1686.ashx" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="elementor-container elementor-column-gap-default" style="margin-top: 35px;">
-                                                   <div class="elementor-row">                                                      
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Godrej" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Grophers.png" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Metro" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/More" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Ninja.png" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Parle" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Reliance-freesh" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="elementor-container elementor-column-gap-default" style="margin-top: 35px;">
-                                                   <div class="elementor-row">                         
-                                                      
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Safal" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Too-tum" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Uddan" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Zomato" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Azadpur.jpg" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-419c008e" data-id="419c008e" data-element_type="column">
-                                                         <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                               <div class="elementor-element elementor-element-6700512e scroll-motion-no elementor-widget elementor-widget-image" data-id="6700512e" data-element_type="widget" data-widget_type="image.default">
-                                                                  <div class="elementor-widget-container">
-                                                                     <div class="elementor-image">
-                                                                        <img width="" height="" src="img/clients/Sodexo.jpg" class="attachment-full size-full" alt="" loading="lazy" />
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
+                                 <div class="slide standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4647 type-post status-publish format-standard has-post-thumbnail hentry category-vegetables">
+                                    <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                       <div class="post-labels">
+                                          <div class="post-categories"><a class="post-category-item" href="">New Age Traders</a></div>
+                                       </div>
+                                       <div class="post-media-wrapper">
+                                          <a href="">
+                                             <picture>
+                                                <img alt="3" title="3" src="img/avenue/New-age-buyer.png" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                             </picture>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="slide standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4647 type-post status-publish format-standard has-post-thumbnail hentry category-vegetables">
+                                    <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                       <div class="post-labels">
+                                          <div class="post-categories"><a class="post-category-item" href="">Conventional Buyers</a></div>
+                                       </div>
+                                       <div class="post-media-wrapper">
+                                          <a href="">
+                                             <picture>
+                                                <img alt="3" title="3" src="img/avenue/Conventional.png" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                             </picture>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
 
-                                                   </div>
-                                                </div>
-                                             </section>
-                                          </div>
+                                 <div class="slide standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4647 type-post status-publish format-standard has-post-thumbnail hentry category-vegetables">
+                                    <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                       <div class="post-labels">
+                                          <div class="post-categories"><a class="post-category-item" href="">Export</a></div>
+                                       </div>
+                                       <div class="post-media-wrapper">
+                                          <a href="">
+                                             <picture>
+                                                <img alt="3" title="3" src="img/avenue/export.jpg" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                             </picture>
+                                          </a>
                                        </div>
                                     </div>
                                  </div>
                               </div>
-                           </section>
+                              </section>
+                           </div>
+
+
+                           <!-- Our clients -->
+                           <div class="container py-5" align="center">
+                              <div class="elementor-widget-container">
+                              <div class="agrarium-heading-widget">
+                                 <h2 class="agrarium-heading"><span class="agrarium-heading-content theme-color">Our Clients</span></h2>
+                              </div>
+                           </div>
+                              <section class="customer-logos slider pt-4">
+                                 <div class="slide"><img src="img/clients/Itc"></div>
+                                 <div class="slide"><img src="img/clients/Godrej"></div>
+                                 <div class="slide"><img src="img/clients/Grophers.png"></div>
+                                 <div class="slide"><img src="img/clients/Metro"></div>
+                                 <div class="slide"><img src="img/clients/More"></div>
+                                 <div class="slide"><img src="img/clients/Ninja.png"></div>
+                                 <div class="slide"><img src="img/clients/Parle"></div>
+                                 <div class="slide"><img src="img/clients/Reliance-freesh"></div>
+                                 <div class="slide"><img src="img/clients/Safal"></div>
+                                 <div class="slide"><img src="img/clients/Too-tum"></div>
+                                 <div class="slide"><img src="img/clients/Uddan"></div>
+                                 <div class="slide"><img src="img/clients/Zomato"></div>
+                                 <div class="slide"><img src="img/clients/Azadpur.jpg"></div>
+                                 <div class="slide"><img src="img/clients/Sodexo.jpg"></div>
+                              </section>
+                           </div>
+                           <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+                           <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+                           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                           <script>
+                           $(document).ready(function(){
+                               $('.customer-logos').slick({
+                                   slidesToShow: 6,
+                                   slidesToScroll: 1,
+                                   autoplay: true,
+                                   autoplaySpeed: 1500,
+                                   arrows: false,
+                                   dots: false,
+                                   pauseOnHover: false,
+                                   responsive: [{
+                                       breakpoint: 768,
+                                       settings: {
+                                           slidesToShow: 2
+                                       }
+                                   }, {
+                                       breakpoint: 520,
+                                       settings: {
+                                           slidesToShow: 2
+                                       }
+                                   }]
+                               });
+                           });
+                           $(document).ready(function(){
+                               $('.blog-slider').slick({
+                                   slidesToShow: 1,
+                                   slidesToScroll: 1,
+                                   autoplay: true,
+                                   autoplaySpeed: 1500,
+                                   arrows: false,
+                                   dots: false,
+                                   pauseOnHover: false,
+                                   responsive: [{
+                                       breakpoint: 768,
+                                       settings: {
+                                           slidesToShow: 1
+                                       }
+                                   }, {
+                                       breakpoint: 520,
+                                       settings: {
+                                           slidesToShow: 1
+                                       }
+                                   }]
+                               });
+                           });
+                           </script>
+
                            <!-- Our blogs -->
-                           <section class="elementor-section elementor-top-section elementor-element elementor-element-ba1fcc7 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ba1fcc7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                           <section class="media-d-none elementor-section elementor-top-section elementor-element elementor-element-ba1fcc7 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ba1fcc7" data-element_type="section">
                               <div class="elementor-container elementor-column-gap-default">
                                  <div class="elementor-row">
                                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3277b55" data-id="3277b55" data-element_type="column">
@@ -1157,7 +1015,7 @@
                                              <section class="elementor-section elementor-inner-section elementor-element elementor-element-c9c8468 elementor-section-full_width elementor-section-content-bottom elementor-section-height-default elementor-section-height-default" data-id="c9c8468" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                                                 <div class="elementor-container elementor-column-gap-no">
                                                    <div class="elementor-row">
-                                                      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-93e7ccd" data-id="93e7ccd" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+                                                      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-93e7ccd" data-id="93e7ccd" data-element_type="column">
                                                          <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
                                                                <div class="elementor-element elementor-element-86d7ffb elementor-widget elementor-widget-agrarium_heading" data-id="86d7ffb" data-element_type="widget" data-widget_type="agrarium_heading.default">
@@ -1210,7 +1068,7 @@
                                                                      </picture>
                                                                   </a>
                                                                </div>
-                                                               <h5 class="post-title"><a href="#">Agriculture Conference  Harvest 2020 in Paris</a></h5>
+                                                               <h5 class="post-title"><a href="#">Agriculture Conference  Harvest 2020</a></h5>
                                                             </div>
                                                          </div>
                                                          <div class="standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4647 type-post status-publish format-standard has-post-thumbnail hentry category-vegetables">
@@ -1277,7 +1135,66 @@
                                  </div>
                               </div>
                            </section>
-                           <!-- our customers -->
+
+                           <!-- mobile blogs -->
+                           <div class="container py-5 desktop-d-none" align="center">
+                              <div class="elementor-widget-container">
+                                 <div class="agrarium-heading-widget">
+                                    <h2 class="agrarium-heading"><span class="agrarium-heading-content theme-color">Our Blogs</span></h2>
+                                 </div>
+                              </div>
+                              <section class="blog-slider slider pt-4">
+                                 <div class="slide">
+                                    <div class="standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4641 type-post status-publish format-standard has-post-thumbnail hentry category-farming tag-development tag-post-type">
+                                       <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                          <div class="post-labels">
+                                             <div class="post-categories"><a class="post-category-item" href="#">Fruits</a></div>
+                                          </div>
+                                          <div class="post-media-wrapper">
+                                             <a href="#">
+                                                <picture>
+                                                   <img alt="fruit" title="fruit" src="img/blog/Fruits.png" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                                </picture>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="slide">
+                                    <div class="standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4641 type-post status-publish format-standard has-post-thumbnail hentry category-farming tag-development tag-post-type">
+                                       <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                          <div class="post-labels">
+                                             <div class="post-categories"><a class="post-category-item" href="#">Fruits</a></div>
+                                          </div>
+                                          <div class="post-media-wrapper">
+                                             <a href="#">
+                                                <picture>
+                                                   <img alt="fruit" title="fruit" src="img/blog/Fruits.png" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                                </picture>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="slide">
+                                    <div class="standard-blog-item-wrapper post grid-item grid-blog-item-wrapper post-4641 type-post status-publish format-standard has-post-thumbnail hentry category-farming tag-development tag-post-type">
+                                       <div class="blog-item media" style="border:2px solid #ccc;border-radius: 10px;">
+                                          <div class="post-labels">
+                                             <div class="post-categories"><a class="post-category-item" href="#">Fruits</a></div>
+                                          </div>
+                                          <div class="post-media-wrapper">
+                                             <a href="#">
+                                                <picture>
+                                                   <img alt="fruit" title="fruit" src="img/blog/Fruits.png" class="attachment-agrarium_post_grid_3_columns size-agrarium_post_grid_3_columns wp-post-image" />
+                                                </picture>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </section>
+                           </div>
+
 
                            <!-- testimonials -->
                            <section data-parallax="scroll" class="elementor-section elementor-top-section elementor-element elementor-element-3850bbb elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3850bbb" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
@@ -1286,7 +1203,7 @@
                                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3206d74" data-id="3206d74" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                                        <div class="elementor-column-wrap elementor-element-populated">
                                           <div class="elementor-widget-wrap">
-                                             <section class="elementor-section elementor-inner-section elementor-element elementor-element-2762c45 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2762c45" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                             <section class="elementor-section elementor-inner-section elementor-element elementor-element-2762c45 elementor-section-boxed elementor-section-height-default elementor-section-height-default" style="padding: 20px 0px !important;">
                                                 <div class="elementor-background-overlay"></div>
                                                 <div class="elementor-container elementor-column-gap-default">
                                                    <div class="elementor-row">
@@ -1424,7 +1341,7 @@
                                  </div>
                               </div>
                            </section> -->
-                           <section class="elementor-section elementor-top-section elementor-element elementor-element-812d59f elementor-section-height-min-height elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="812d59f" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                           <section class="bg-trans elementor-section elementor-top-section elementor-element elementor-element-812d59f elementor-section-height-min-height elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="812d59f" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                               <div class="elementor-container elementor-column-gap-default">
                                  <div class="elementor-row">
                                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b2f8010" data-id="b2f8010" data-element_type="column">
@@ -1511,6 +1428,117 @@
                </div>
             </div>
          </footer>
+
+
+
+
+<!-- try -->
+<button class="trigger d-none">Click the modal!</button>
+<div id="myModal" class="modal" style="z-index: 9999 !important;">
+    <div class="modal-content" style="background: #d6d6d6;">
+        <span class="close-button">×</span>
+        <div class="" style="display: flex;width: 100%;">
+            <div class="" style="width:100%;padding:30px 0px;" align="center">
+               <h2 class="font-weight-bold theme-color">Welcome To FarmPlus</h2>
+            </div>
+         </div>
+        <div class="w-100" style="width: 100%;">
+           <div class="w-55 w-pad" align="center">            
+            <div class="font-weight-bold media-pr" style="font-size:14px;line-height: 1.6;padding-top: 10px;margin-bottom: 40px;padding-left: 18px;">
+               Brought into business in 2011, Farm Plus is the Output domain of DeHaat that provides superior quality Dry and Fresh products, picked up right from the fields and delivered at the doorsteps of clients across the country.
+            </div>
+            <div class="media-d-block" style="display:flex;justify-content: center;align-items: center;">
+               <img src="img/logo.svg" width="22%" class="media-notify-logo" style="display: block;margin:auto;">
+               <!-- <a class="close-a btn btn-pink rounded-pill"> </a> -->
+               <div class="header-mobile-button1">
+                  <div class="btn-container">
+                     <a class="button close-a" style="--width:240px;--height:50px;font-size:13px;">
+                        <span class="text">Proceed To FarmPlus</span>
+                        <div class="icon-container">
+                           <div class="icon icon--left">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                           <div class="icon icon--right">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <svg style="display: none;">
+                     <symbol id="arrow-right" viewBox="0 0 20 10">
+                        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                     </symbol>
+                  </svg>
+               </div>
+         <!--  -->
+            </div>
+            <div class="media-d-block" style="justify-content: center;align-items: center;padding-top: 30px;">
+               <img src="https://agrevolution.in/images/company/deHaat-logo.png" width="28%" class="media-notify-logo" style="display: block;margin:auto;">
+               <!-- <a href="https://agrevolution.in/" target="_blank" class="btn btn-success rounded-pill">explore dehaat</a> -->
+               <div class="header-mobile-button1">
+                  <div class="btn-container bg-green">
+                     <a href="https://agrevolution.in/" target="_blank" class="button bg-orange" style="--width:240px;--height:50px;font-size:13px;">
+                        <span class="text">Explore Dehaat</span>
+                        <div class="icon-container icon-container2">
+                           <div class="icon icon2 icon--left icon--left">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                           <div class="icon icon2 icon--right">
+                              <svg>
+                                 <use xlink:href="#arrow-right"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+
+                  <svg style="display: none;">
+                     <symbol id="arrow-right" viewBox="0 0 20 10">
+                        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                     </symbol>
+                  </svg>
+               </div>
+            </div>            
+           </div>
+
+           <div class="media-d-none" style="width:45%;" align="center">
+            <img src="img/notify.png" width="100%" style="margin-top: -80px;">
+           </div>
+        </div>
+    </div>
+</div>
+<script>
+   // load modal
+   $(window).load(function(){
+      setTimeout(function(){
+         toggleModal();
+      }, 3000);
+   });
+
+   var modal = document.querySelector(".modal");
+   var trigger = document.querySelector(".trigger");
+   var closeButton = document.querySelector(".close-button");
+   var closeButton1 = document.querySelector(".close-a");
+
+   function toggleModal() {
+       modal.classList.toggle("show-modal");
+   }
+   function windowOnClick(event) {
+       if (event.target === modal) {
+           toggleModal();
+       }
+   }
+   trigger.addEventListener("click", toggleModal);
+   closeButton.addEventListener("click", toggleModal);
+   closeButton1.addEventListener("click", toggleModal);
+   window.addEventListener("click", windowOnClick);
+</script>
       </div>
 
 
