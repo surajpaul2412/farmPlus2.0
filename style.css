@@ -3500,7 +3500,7 @@ strong{font-weight: 800 !important;}
 .media-d-block{display: flex;}
 .w-55{width:55%;}
 .w-pad{padding: 0px 20px;}
-.media-pr{text-align: left !important;}
+.media-pr{text-align: left;}
 
 /*desktop only media*/
 @media only screen and (min-width: 945px) {
