@@ -3507,6 +3507,7 @@ strong{font-weight: 800 !important;}
 	.desktop-d-none{display: none !important;}
 	.desktop-40{width:40% !important;display: flex !important;}
 	.desktop-px-140{padding:0px 140px !important;}
+	.desktop-w-100{width: 100% !important;}
 }
 
 /*mobile only media*/
